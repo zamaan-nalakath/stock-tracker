@@ -1,4 +1,4 @@
-const API_KEY = "PASTE_YOUR_API_KEY_HERE";
+const API_KEY = "6VPUY7L38WD5ETT6";
 
 function saveAndFetch() {
   const symbol = document.getElementById("symbol").value.toUpperCase();
