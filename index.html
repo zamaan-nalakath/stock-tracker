@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indian Stock Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>📈 Indian Stock Tracker</h2>
+
+  <div class="card">
+    <label>Stock Symbol (NSE)</label>
+    <input id="symbol" placeholder="RELIANCE.NSE" />
+
+    <label>Buy Price (₹)</label>
+    <input id="buyPrice" type="number" placeholder="2500" />
+
+    <label>Quantity</label>
+    <input id="quantity" type="number" placeholder="10" />
+
+    <button onclick="saveAndFetch()">Save & Track</button>
+  </div>
+
+  <div class="card result">
+    <p>Current Price: ₹<span id="currentPrice">--</span></p>
+    <p>Profit / Loss: ₹<span id="profit">--</span></p>
+    <p>Total Value: ₹<span id="totalValue">--</span></p>
+    <p class="small">Last updated: <span id="updated">--</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
